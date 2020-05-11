@@ -1,6 +1,7 @@
 {
-	"name": "CopyPipeline",
+	"name": "CopyPipelinefromBlobtoBlob",
 	"properties": {
+		"description": "This is a demo pipeline to test the copy of file from one blob to another blob",
 		"activities": [
 			{
 				"name": "CopyFromBlobToBlob",
