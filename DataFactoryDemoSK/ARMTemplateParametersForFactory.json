@@ -4,9 +4,14 @@
 	"parameters": {
 		"factoryName": {
 			"value": "DataFactoryDemoSK"
-		},
+		},		
 		"AzureStorageLinkedService_connectionString": {
-			"value": ""
-		}
+            "reference": {
+                "keyVault": {
+                    "id": "/subscriptions/<subId>/resourceGroups/<resourcegroupId> /providers/Microsoft.KeyVault/vaults/<vault-name> "
+                },
+                "secretName": " < secret - name > "
+            }
+        }
 	}
 }
