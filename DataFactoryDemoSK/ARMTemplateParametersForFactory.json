@@ -8,9 +8,9 @@
 		"AzureStorageLinkedService_connectionString": {
             "reference": {
                 "keyVault": {
-                    "id": "/subscriptions/<subId>/resourceGroups/<resourcegroupId> /providers/Microsoft.KeyVault/vaults/<vault-name> "
+                    "id": "/subscriptions/caad9413-e625-4290-94fa-9bbb9f676868/resourceGroups/SkyKick/providers/Microsoft.KeyVault/vaults/DevOps-Sec-KeyVault"
                 },
-                "secretName": " < secret - name > "
+                "secretName": "DF-QA-Storage-Conn-String"
             }
         }
 	}
