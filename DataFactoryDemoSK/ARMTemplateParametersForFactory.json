@@ -4,14 +4,12 @@
 	"parameters": {
 		"factoryName": {
 			"value": "DataFactoryDemoSK"
-		},		
+		},
 		"AzureStorageLinkedService_connectionString": {
-            "reference": {
-                "keyVault": {
-                    "id": "/subscriptions/caad9413-e625-4290-94fa-9bbb9f676868/resourceGroups/SkyKick/providers/Microsoft.KeyVault/vaults/DevOps-Sec-KeyVault"
-                },
-                "secretName": "DF-QA-Storage-Conn-String"
-            }
-        }
+			"value": ""
+		},
+		"QA_DF_Storage_Link_connectionString": {
+			"value": ""
+		}
 	}
 }

@@ -8,6 +8,9 @@
 		"AzureStorageLinkedService_connectionString": {
 			"value": ""
 		},
+		"QA_DF_Storage_Link_connectionString": {
+			"value": ""
+		},
 		"containerUri": {
 			"value": ""
 		},

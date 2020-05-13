@@ -10,6 +10,10 @@
 		"AzureStorageLinkedService_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureStorageLinkedService'"
+		},
+		"QA_DF_Storage_Link_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'QA_DF_Storage_Link'"
 		}
 	},
 	"variables": {
@@ -17,11 +21,11 @@
 	},
 	"resources": [
 		{
-			"name": "[concat(parameters('factoryName'), '/CopyPipelinefromBlobtoBlob')]",
+			"name": "[concat(parameters('factoryName'), '/QuickTest_CopyPipelinefromBlobtoBlob')]",
 			"type": "Microsoft.DataFactory/factories/pipelines",
 			"apiVersion": "2018-06-01",
 			"properties": {
-				"description": "This is a demo pipeline to test the copy of file from one blob to another blob",
+				"description": "This is a demo pipeline to test the copy of file from one blob to another blob_QuickTest",
 				"activities": [
 					{
 						"name": "CopyFromBlobToBlob",
@@ -130,6 +134,19 @@
 				"type": "AzureBlobStorage",
 				"typeProperties": {
 					"connectionString": "[parameters('AzureStorageLinkedService_connectionString')]"
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/QA_DF_Storage_Link')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBlobStorage",
+				"typeProperties": {
+					"connectionString": "[parameters('QA_DF_Storage_Link_connectionString')]"
 				}
 			},
 			"dependsOn": []
