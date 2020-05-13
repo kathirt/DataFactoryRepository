@@ -1,7 +1,7 @@
 {
-	"name": "QuickTest_CopyPipelinefromBlobtoBlob",
+	"name": "SKDemo_CopyPipelinefromBlobtoBlob",
 	"properties": {
-		"description": "This is a demo pipeline to test the copy of file from one blob to another blob_QuickTest",
+		"description": "This is a demo pipeline to test the copy of file from one blob to another blob_SKDemo",
 		"activities": [
 			{
 				"name": "CopyFromBlobToBlob",
